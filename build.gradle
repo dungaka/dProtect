@@ -9,9 +9,7 @@ allprojects {
     version = dProtectVersion
     repositories {
         mavenLocal()
-        maven {
-          url = uri("https://maven.pkg.github.com/open-obfuscator/dProtect")
-        }
+        maven { url 'https://jitpack.io' }
     }
 }
 
@@ -39,14 +37,7 @@ allprojects { Project project ->
             configure(project) {
                 publishing {
                     repositories {
-                        maven {
-                            name = 'Github'
-                            url = uri('https://maven.pkg.github.com/open-obfuscator/dProtect')
-                            credentials {
-                                username = System.getenv('DPROTECT_GITHUB_USERNAME')
-                                password = System.getenv('DPROTECT_GITHUB_TOKEN')
-                            }
-                        }
+                        maven { url 'https://jitpack.io' }
                     }
                 }
             }
