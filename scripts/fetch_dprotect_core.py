@@ -16,7 +16,7 @@ from pathlib import Path
 GIT = shutil.which("git")
 PROP_KEYWORD = "dprotectCoreCommit"
 
-REPO = "https://github.com/open-obfuscator/dProtect-core"
+REPO = "https://github.com/dungaka/dProtect-core"
 
 UPSTREAM_KEYWORD = "latest"
 
